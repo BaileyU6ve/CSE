@@ -92,7 +92,7 @@ def distance(x1, y1, x2, y2):
 distance(0, 0, 3, 4)
 distance(0, 0, 5, 12)
 
-# Loops
+# Loops14
 for i in range(10000):    # This gives the number 0 through 4
     say_it()
 
@@ -101,3 +101,41 @@ for i in range(10):
 
 for i in range(5):
     f(i)
+
+# While loops
+a = 1
+while a < 10:
+    print(a)
+    a += 2  # This is the same as saying a = a + 1
+
+
+"""
+At the moment you START the loop:
+For loops - Use when you know EXACTLY how may iterations 
+While loops - Use when you DON'T know how many iterations
+"""
+
+sunny = False
+if sunny:
+    print("Go outside")
+
+
+def grade_calc(percentage):
+    if percentage >= 90:
+        return "A"
+    elif percentage >= 80:
+        return "B"
+    elif percentage >= 70:
+        return "C"
+    elif percentage >= 60:
+        return "D"
+    else:
+        return "F"
+
+
+your_grade = grade_calc(82)
+print(your_grade)
+
+# "Random" Notes
+import random # This should be on line 1
+print(random.randint(0, 100))
