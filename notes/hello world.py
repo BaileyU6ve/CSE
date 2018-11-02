@@ -93,7 +93,7 @@ distance(0, 0, 3, 4)
 distance(0, 0, 5, 12)
 
 # Loops14
-for i in range(10000):    # This gives the number 0 through 4
+for i in range(5):    # This gives the number 0 through 4
     say_it()
 
 for i in range(10):

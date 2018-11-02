@@ -1,15 +1,9 @@
 import random
-
+r = random.randint(1, 10)
 print("Guess a number from 1 to 10")
-Guess1 = input("Guess-")
 
-Guess2 = input("Guess-")
-
-Guess3 = input("Guess-")
-
-Guess4 = input("Guess-")
-
-Guess5 = input("Guess-")
+while r and guess:
+    
 
 
-print(random.randint(1, 10))
+
