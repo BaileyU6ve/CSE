@@ -9,14 +9,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/notes$Bailey_Phaphone___Guess_Game.coverage" NAME="Bailey Phaphone - Guess Game Coverage Results" MODIFIED="1541612241418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$Bailey_Phaphone___Guess_Game.coverage" NAME="Bailey Phaphone - Guess Game Coverage Results" MODIFIED="1541698328468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Baley_Phaphone___Mad_Lib.coverage" NAME="Baley Phaphone - Mad Lib Coverage Results" MODIFIED="1540915918375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$hello_world.coverage" NAME="hello world Coverage Results" MODIFIED="1541525263817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$Lucky_7_s.coverage" NAME="Lucky 7's Coverage Results" MODIFIED="1541698959302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1530921782">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.39" value="2" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.44" value="1" />
@@ -27,27 +29,27 @@
           <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.60" value="1" />
           <entry key="project.open.time.63" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="3" />
+          <entry key="py" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="3" />
+          <entry key="Python" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="4789" />
+          <entry key="py" value="5287" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="4789" />
+          <entry key="Python" value="5287" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -59,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hello world.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="632">
-              <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+            <state relative-caret-position="355">
+              <caret line="141" selection-start-line="141" selection-end-line="141" />
               <folding>
                 <marker date="1541176447517" expanded="true" signature="1345:1350" ph="..." />
                 <marker date="1541176447517" expanded="true" signature="1428:1433" ph="..." />
@@ -70,11 +72,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Bailey Phaphone - Guess Game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="119">
+              <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Lucky 7's.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -97,6 +108,7 @@
         <option value="$PROJECT_DIR$/Baley Phaphone - Mad Lib.py" />
         <option value="$PROJECT_DIR$/hello world.py" />
         <option value="$PROJECT_DIR$/Bailey Phaphone - Guess Game.py" />
+        <option value="$PROJECT_DIR$/Lucky 7's.py" />
       </list>
     </option>
   </component>
@@ -147,7 +159,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Bailey Phaphone - Guess Game">
+  <component name="RunManager" selected="Python.Lucky 7's">
     <configuration name="Bailey Phaphone - Guess Game" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -192,6 +204,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Lucky 7's" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="notes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lucky 7's.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="hello world" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -218,9 +252,11 @@
       <item itemvalue="Python.hello world" />
       <item itemvalue="Python.Baley Phaphone - Mad Lib" />
       <item itemvalue="Python.Bailey Phaphone - Guess Game" />
+      <item itemvalue="Python.Lucky 7's" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Lucky 7's" />
         <item itemvalue="Python.Bailey Phaphone - Guess Game" />
         <item itemvalue="Python.hello world" />
         <item itemvalue="Python.Baley Phaphone - Mad Lib" />
@@ -244,12 +280,12 @@
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2963526" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30091184" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34754097" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34754097" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -277,8 +313,8 @@
     <entry file="file://$PROJECT_DIR$/Baley Phaphone - Mad Lib.py" />
     <entry file="file://$PROJECT_DIR$/hello world.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="141" lean-forward="true" selection-start-line="141" selection-end-line="141" />
+        <state relative-caret-position="355">
+          <caret line="141" selection-start-line="141" selection-end-line="141" />
           <folding>
             <marker date="1541176447517" expanded="true" signature="1345:1350" ph="..." />
             <marker date="1541176447517" expanded="true" signature="1428:1433" ph="..." />
@@ -289,8 +325,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Bailey Phaphone - Guess Game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="119">
+          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lucky 7's.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
         </state>
       </provider>
     </entry>
