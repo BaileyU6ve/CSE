@@ -4,21 +4,19 @@ dice2 = random.randint(1, 6)
 money = 15
 rounds = 0
 while money > 0:
+    dice1 = random.randint(1, 6)
+    dice2 = random.randint(1, 6)
     if dice1 + dice2 == 7:
         money = money - 1
-        dice1 = random.randint(1, 6)
-        dice2 = random.randint(1, 6)
+        money = money + 5
         print()
         print("You rolled")
         print(dice1 + dice2)
-        money = money + 5
         print("Current cash")
         print(money)
         print()
         rounds = rounds + 1
     elif dice1 + dice2 < 7:
-        dice1 = random.randint(1, 6)
-        dice2 = random.randint(1, 6)
         print()
         print("You rolled")
         print(dice1 + dice2)
@@ -28,12 +26,10 @@ while money > 0:
         print()
         rounds = rounds + 1
     elif dice1 + dice2 > 7:
-        dice1 = random.randint(1, 6)
-        dice2 = random.randint(1, 6)
         print()
         print("You rolled")
         print(dice1 + dice2)
-        money = money -1
+        money = money - 1
         print("Current cash")
         print(money)
         print()
