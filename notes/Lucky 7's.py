@@ -1,6 +1,4 @@
 import random
-dice1 = random.randint(1, 6)
-dice2 = random.randint(1, 6)
 money = 15
 rounds = 0
 while money > 0:
