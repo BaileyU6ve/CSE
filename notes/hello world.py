@@ -186,3 +186,63 @@ print(shapes[1:3])
 print(shapes[1:34])
 print(shapes[1:])
 print(shapes[:4])
+
+food_list = ["hot dog", "pizza", "burrito", "tacos", "nachos", "sushi", "ice cream", "spaghetti", "fried rice", "soup",
+         "chicken", "mashed potatoes", "hot wings", "chips", "bacon", "eggs", "steak", "toast", "waffles",
+         "salad", "watermelon"]
+print(len(food_list))
+
+# Adding stuff to a list
+food_list.append("bacon")
+food_list.append("eggs")
+# Notice that everything is object. method(parameters)
+print(food_list)
+
+food_list.insert(1, "eggo waffles")
+print(food_list)
+
+#Removing things from a list
+food_list.remove("salad")
+print(food_list)
+
+print()
+
+drinks = ["sprite", "pepsi", "fanta"]
+print(drinks)
+drinks.append("coke")
+print(drinks)
+drinks.remove("pepsi")
+print(drinks)
+
+
+# Tuples
+brands = ("apples", "samsung", "HTC")   #Notice the parantheses
+
+# Also removing stuff from a list
+print(food_list)
+food_list.pop(0)
+print(food_list)
+
+# Find the index of an item
+print(food_list.index("chicken"))
+
+# Changing things into a list
+string1 = "turquoise"
+list1 = list(string1)
+print(list1)
+
+# Hangman hints
+for i in range(len(list1)):   # i goes through all indicators
+    if list1[i] == "u":
+        list1.pop(i)   # remove the i-th index
+        list1.insert(i, "*")   # Put a * there instead
+'''
+for charcters in list1:
+    if charcter == "u":
+        # replace with a *
+        current_index = list1.index(charcter)
+        list1.pop(current_index)
+        list1.insert(current_index, "*"
+'''
+# Turn a list into a string
+print("".join(list1))
