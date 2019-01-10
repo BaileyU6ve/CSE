@@ -242,7 +242,7 @@ for charcters in list1:
         # replace with a *
         current_index = list1.index(charcter)
         list1.pop(current_index)
-        list1.insert(current_index, "*"
+        list1.insert(current_index, "*")
 '''
 # Turn a list into a string
 print("".join(list1))
