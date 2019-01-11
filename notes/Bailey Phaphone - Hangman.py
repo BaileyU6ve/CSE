@@ -1,7 +1,7 @@
-word_bank = ["phoenix", "amazing", "ice cream", "sync", "incantation", "pandemonium", "isosceles", "California",
-             "treasure", "Yggdrasil"]
+import random
 guesses = 8
+word_bank = ["phoenix", "amazing", "ice cream", "sync", "incantation", "pandemonium", "isosceles", "California",
+             "xylophone", "Yggdrasil"]
 
-print(word_bank)
-
-word = random.choice(word_bsnk)
+word = random.choice(word_bank)
+print(word)
