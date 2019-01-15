@@ -237,10 +237,10 @@ for i in range(len(list1)):   # i goes through all indicators
         list1.pop(i)   # remove the i-th index
         list1.insert(i, "*")   # Put a * there instead
 '''
-for charcters in list1:
-    if charcter == "u":
+for characters in list1:
+    if character == "u":
         # replace with a *
-        current_index = list1.index(charcter)
+        current_index = list1.index(character)
         list1.pop(current_index)
         list1.insert(current_index, "*")
 '''
