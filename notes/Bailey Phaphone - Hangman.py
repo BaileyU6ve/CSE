@@ -1,24 +1,17 @@
 import random
 import string
-word_bank = ["phoenix", "majestic", "ice cream!", "sync", "incantation", "pandemonium", "isosceles", "California",
+word_bank = ["Phoenix", "majestic", "ice cream!", "sync", "incantation", "pandemonium", "isosceles", "California",
              "xylophone", "Yggdrasil"]
 
+guesses = 8
 word = random.choice(word_bank)
-guesses = 6
-LettersCorrect = []
-LettersIncorrect = []
-Letters = (len(word))
-
-string1 = word
-list1 = list(string1)
-print(list1)
-punctuations = string.punctuation
+list1 = list(word)
+letters_guessed = []
+letters = (len(word))
 alphabet = string.ascii_letters
+guess = input("Guess a letter-")
 
+letters_guessed.append(guess)
 
-for i in range(len(list1)):
-        if list1[i] < "z":
-            list1.pop(i)
-            list1.insert(i, "*")
-
-print("".join(list1))
+for i in range(list1):
+  
