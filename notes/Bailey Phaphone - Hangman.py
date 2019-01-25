@@ -10,11 +10,19 @@ letters_guessed = []
 output = []
 letters = (len(word))
 alphabet = string.ascii_letters
+punctuations = string.punctuation
 
 for i in range(letters):
     output.append("*")
 print("".join(output))
-print(word)
+# print(word)
 
-guess = input("Guess a letter-")
-letters_guessed.append(guess)
+while guesses > 0 and (len(word)) > 0:
+    guess = input("Pick a letter -")
+    letters_guessed.append(guess)
+    if guess in word:
+        print("Correct!")
+        # for i in range(len(word)):
+
+
+
