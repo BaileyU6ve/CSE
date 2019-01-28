@@ -29,7 +29,8 @@ while guesses > 0 and (len(word_list)) > 0:
             if word_list[i] == guess:
                 output.pop(i)
                 output.insert(i, guess)
-                print(word_list)
+            print("".join(output))
+
 
 
 
