@@ -8,12 +8,89 @@ world_map = {
         }
     },
     'CAROUSEL': {
-        'NAME': "The Carousel ride",
+        'NAME': "Carousel ride",
         'DESCRIPTION': "The rides should be out of order.",
         'PATHS': {
             'EAST': 'RESTROOMS',
             'WEST': 'MAZE',
             'SOUTH': 'ENTRANCE'
         }
-    }
+    },
+    'RESTROOMS': {
+        'NAME': "Restrooms",
+        'DESCRIPTION': "There's a row of stalls in each restroom. Nothing works anymore.",
+        'PATHS': {
+            'WEST': 'CAROUSEL'
+        }
+    },
+    'MAZE': {
+        'NAME': "Bush Maze",
+        'DESCRIPTION': "There's only one exit in the maze. "
+                       "You feel a murderous presence towards the south.",
+        'PATHS': {
+            'SOUTH': 'DEAD_END',
+            'NORTH': 'ADVENTURE_LAND',
+            'EAST': 'CAROUSEL'
+        }
+    },
+    'DEAD_END': {
+        'NAME': "Dead end",
+        'DESCRIPTION': "You find clowns waiting at the end."
+                       " You should turn back around.",
+        'PATHS': {
+            'NORTH': 'MAZE'
+        }
+    },
+    'ADVENTURE_LAND': {
+        'NAME': "Adventure Land",
+        'DESCRIPTION': "This is where most of the rides were.",
+        'PATHS': {
+            'NORTH': 'BUMPER_CARS',
+            'EAST': 'ROCKET_COASTER',
+            'SOUTH': 'MAZE'
+        }
+    },
+    'BUMPER_CARS': {
+        'NAME': "Bumper Cars",
+        'DESCRIPTION': "When you reach the bumper cars, you can see someone riding one.",
+        'PATHS': {
+            'SOUTH': 'ADVENTURE_LAND'
+        }
+    },
+    'ROCKET_COASTER': {
+        'NAME': "Rocket Coaster",
+        'DESCRIPTION': "Half of the roller coaster is hanging off of the rails."
+                       " Many accidents happened here.",
+        'PATHS': {
+            'EAST': 'TRAIN',
+            'WEST': 'ADVENTURE_LAND'
+        }
+    },
+    'TRAIN': {
+        'NAME': "Train",
+        'DESCRIPTION': "You can still ride the train.",
+        'PATHS': {
+            'NORTH': 'SPLIT_PATH',
+            'WEST': 'ROCKET_COASTER'
+        }
+    },
 }
+
+
+playing = True
+current_node = world_map['ENTRANCE']
+directions = ['NORTH', 'SOUTH', 'EAST', 'WEST', 'UP', 'DOWN']
+while playing:
+    print(current_node['NAME'])
+    print(current_node['DESCRIPTION'])
+    command = input(">_")
+    if command.lower() in ['q', 'quit', 'exit']:
+        playing = False
+    elif command.upper() in directions:
+        try:
+            room_name = current_node['PATHS'][command.upper()]
+            current_node = world_map[room_name]
+        except KeyError:
+            print("I can't go that way")
+    else:
+        print("Command Not Found")
