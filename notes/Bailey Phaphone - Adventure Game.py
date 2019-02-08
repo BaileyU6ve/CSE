@@ -66,14 +66,65 @@ world_map = {
             'WEST': 'ADVENTURE_LAND'
         }
     },
-    'TRAIN': {
+    'TRAIN_STATION': {
         'NAME': "Train",
-        'DESCRIPTION': "You can still ride the train.",
+        'DESCRIPTION': "You can still ride the train north form here.",
         'PATHS': {
             'NORTH': 'SPLIT_PATH',
             'WEST': 'ROCKET_COASTER'
         }
     },
+    'SPLIT_PATH': {
+        'NAME': "Split Path",
+        'DESCRIPTION': "You can go east or west from here. "
+                       "You can hear music coming from the west.",
+        'PATHS': {
+            'EAST': 'HOLE',
+            'WEST': 'TINY_TOWN',
+            'SOUTH': 'TRAIN_STATION'
+        }
+    },
+    'TINY_TOWN': {
+        'NAME': "Tiny Town",
+        'DESCRIPTION': "This place is all machine, including the people.",
+        'PATHS': {
+            'NORTH': 'FOUNTAIN',
+            'EAST': 'SPLIT_PATH'
+        }
+    },
+    'FOUNTAIN': {
+        'NAME': "Fountain",
+        'DESCRIPTION': "No water flowed from this fountain anymore.",
+        'PATHS': {
+            'NORTH': 'FOOD_AREA',
+            'EAST': 'PARK',
+            'SOUTH': 'TINY_TOWN'
+        }
+    },
+    'PARK': {
+        'NAME': "Tiny Park",
+        'DESCRIPTION': "Nothing in the park is green and "
+                       "most of the benches were broken.",
+        'PATHS': {
+            'WEST': 'FOUNTAIN'
+        }
+    },
+    'FOOD_AREA': {
+        'NAME': "Food Alley",
+        'DESCRIPTION': "All the food used to be sold here. "
+                       "You can hear a child crying from the west.",
+        'PATHS': {
+            'WEST': 'HAUNTED_HOUSE',
+            'SOUTH': 'FOUNTAIN'
+        }
+    },
+    'HAUNTED_HOUSE': {
+        'NAME': "The North Parking Lot",
+        'DESCRIPTION': "There are a couple cars parked here",
+        'PATHS': {
+            'SOUTH': 'R19A'
+        }
+    }
 }
 
 
