@@ -27,7 +27,7 @@ class Phone(object):
             return
         self.battery_left -= duration * battery_loss_per_minute
         if self.battery_left < 0:
-            self.battery = 0
+            self.battery_left = 0
             print("Your phone dies during the conversation")
         elif self.battery_left == 0:
             print("Your phone dies at the end of the conversation")
@@ -52,5 +52,3 @@ my_phone.make_call(10)
 your_phone.smash_phone()
 
 print(Special_Random.RandomWiebe.my_random())
-
-

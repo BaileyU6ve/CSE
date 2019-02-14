@@ -62,7 +62,7 @@ world_map = {
         'DESCRIPTION': "Half of the roller coaster is hanging off of the rails."
                        " Many accidents happened here.",
         'PATHS': {
-            'EAST': 'TRAIN',
+            'EAST': 'TRAIN_STATION',
             'WEST': 'ADVENTURE_LAND'
         }
     },
@@ -119,10 +119,11 @@ world_map = {
         }
     },
     'HAUNTED_HOUSE': {
-        'NAME': "The North Parking Lot",
-        'DESCRIPTION': "There are a couple cars parked here",
+        'NAME': "Haunted Mansion",
+        'DESCRIPTION': "This is the farthest you can get in the park. "
+                       "The child's cries are coming from here.",
         'PATHS': {
-            'SOUTH': 'R19A'
+            'EAST': 'FOOD_AREA'
         }
     }
 }
