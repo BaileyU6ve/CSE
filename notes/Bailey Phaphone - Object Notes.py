@@ -22,7 +22,7 @@ class Phone(object):
             print("Your screen is broken")
             return
         battery_loss_per_minute = 5
-        if self. battery_left <= 0:
+        if self.battery_left <= 0:
             print("You can't. The phone is dead.")
             return
         self.battery_left -= duration * battery_loss_per_minute
