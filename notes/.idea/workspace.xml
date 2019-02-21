@@ -11,8 +11,8 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/notes$Bailey_Phaphone___Mad_Lib_2.coverage" NAME="Bailey Phaphone - Mad Lib 2 Coverage Results" MODIFIED="1543856491500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
     <SUITE FILE_PATH="coverage/notes$Bailey_Phaphone___Adventure_Game.coverage" NAME="Bailey Phaphone - Adventure Game Coverage Results" MODIFIED="1550163670279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$Bailey_Phaphone___Object.coverage" NAME="Bailey Phaphone - Object Coverage Results" MODIFIED="1550252575701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$World_Map_OOP.coverage" NAME="World Map OOP Coverage Results" MODIFIED="1550683896084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$Bailey_Phaphone___Object.coverage" NAME="Bailey Phaphone - Object Coverage Results" MODIFIED="1550768445825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$World_Map_OOP.coverage" NAME="World Map OOP Coverage Results" MODIFIED="1550768382769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Bailey_Phaphone___Guess_Game.coverage" NAME="Bailey Phaphone - Guess Game Coverage Results" MODIFIED="1541698328468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Baley_Phaphone___Mad_Lib.coverage" NAME="Baley Phaphone - Mad Lib Coverage Results" MODIFIED="1540915918375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Challenges.coverage" NAME="Challenges Coverage Results" MODIFIED="1543857745935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -40,6 +40,7 @@
     <session id="-1530921782">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.35" value="1" />
@@ -49,6 +50,7 @@
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.45" value="2" />
+          <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.48" value="2" />
           <entry key="project.open.time.49" value="2" />
           <entry key="project.open.time.51" value="1" />
@@ -63,7 +65,7 @@
           <entry key="project.open.time.66" value="1" />
           <entry key="project.open.time.85" value="1" />
           <entry key="project.open.time.88" value="1" />
-          <entry key="project.opened" value="29" />
+          <entry key="project.opened" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -81,13 +83,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="32" />
-          <entry key="py" value="12141" />
+          <entry key="py" value="13053" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="32" />
-          <entry key="Python" value="12141" />
+          <entry key="Python" value="13053" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -99,43 +101,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hello world.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2006">
-              <caret line="118" column="9" selection-start-line="118" selection-start-column="9" selection-end-line="118" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Bailey Phaphone - Object Notes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Bailey Phaphone - Object.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <marker date="1550252415252" expanded="true" signature="20:25" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/World Map OOP.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="79" lean-forward="true" selection-start-line="25" selection-start-column="79" selection-end-line="25" selection-end-column="79" />
+            <state relative-caret-position="511">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
               <folding>
-                <marker date="1550684670613" expanded="true" signature="19:24" ph="..." />
+                <marker date="1550770565616" expanded="true" signature="19:24" ph="..." />
               </folding>
             </state>
           </provider>
@@ -144,8 +116,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Bailey Phaphone - Adventure Game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-357">
-              <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
+            <state relative-caret-position="73">
+              <caret line="85" column="6" lean-forward="true" selection-start-line="85" selection-start-column="6" selection-end-line="85" selection-end-column="6" />
+              <folding>
+                <element signature="e#30#255#0" />
+                <element signature="e#273#495#0" />
+                <element signature="e#514#701#0" />
+                <element signature="e#715#1019#0" />
+                <element signature="e#1037#1246#0" />
+                <element signature="e#1270#1506#0" />
+                <element signature="e#1527#1722#0" />
+                <element signature="e#1746#2028#0" />
+                <element signature="e#2051#2256#0" />
+                <element signature="e#2276#2568#0" />
+                <element signature="e#2582#2822#0" />
+                <element signature="e#2587#2793#0" />
+                <element signature="e#2811#3040#0" />
+                <element signature="e#3054#3268#0" />
+                <element signature="e#3287#3552#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -174,10 +163,10 @@
         <option value="$PROJECT_DIR$/Challenges.py" />
         <option value="$PROJECT_DIR$/Bailey Phaphone - Fix It.py" />
         <option value="$PROJECT_DIR$/Bailey Phaphone - Challenges.py" />
-        <option value="$PROJECT_DIR$/Bailey Phaphone - Adventure Game.py" />
         <option value="$PROJECT_DIR$/Special_Random.py" />
         <option value="$PROJECT_DIR$/Bailey Phaphone - Object Notes.py" />
         <option value="$PROJECT_DIR$/Bailey Phaphone - Object.py" />
+        <option value="$PROJECT_DIR$/Bailey Phaphone - Adventure Game.py" />
         <option value="$PROJECT_DIR$/World Map OOP.py" />
       </list>
     </option>
@@ -237,7 +226,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.World Map OOP">
+  <component name="RunManager" selected="Python.Bailey Phaphone - Object">
     <configuration name="Bailey Phaphone - Adventure Game" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -357,8 +346,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.World Map OOP" />
         <item itemvalue="Python.Bailey Phaphone - Object" />
+        <item itemvalue="Python.World Map OOP" />
         <item itemvalue="Python.Bailey Phaphone - Object Notes" />
         <item itemvalue="Python.Bailey Phaphone - Adventure Game" />
         <item itemvalue="Python.Bailey Phaphone - Challenges" />
@@ -382,8 +371,8 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48360655" visible="true" weight="0.2980333" />
-      <window_info id="Structure" order="1" sideWeight="0.5163934" side_tool="true" visible="true" weight="0.2980333" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4819672" visible="true" weight="0.30257186" />
+      <window_info id="Structure" order="1" sideWeight="0.5180328" side_tool="true" visible="true" weight="0.30257186" />
       <window_info id="Favorites" order="2" sideWeight="0.50163937" side_tool="true" weight="0.3100304" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -460,13 +449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello world.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2006">
-          <caret line="118" column="9" selection-start-line="118" selection-start-column="9" selection-end-line="118" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Bailey Phaphone - Object Notes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -476,27 +458,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Bailey Phaphone - Object.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="-16">
+          <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
           <folding>
-            <marker date="1550252415252" expanded="true" signature="20:25" ph="..." />
+            <marker date="1550768486599" expanded="true" signature="20:25" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello world.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="118" column="9" selection-start-line="118" selection-start-column="9" selection-end-line="118" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Bailey Phaphone - Adventure Game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
+        <state relative-caret-position="73">
+          <caret line="85" column="6" lean-forward="true" selection-start-line="85" selection-start-column="6" selection-end-line="85" selection-end-column="6" />
+          <folding>
+            <element signature="e#30#255#0" />
+            <element signature="e#273#495#0" />
+            <element signature="e#514#701#0" />
+            <element signature="e#715#1019#0" />
+            <element signature="e#1037#1246#0" />
+            <element signature="e#1270#1506#0" />
+            <element signature="e#1527#1722#0" />
+            <element signature="e#1746#2028#0" />
+            <element signature="e#2051#2256#0" />
+            <element signature="e#2276#2568#0" />
+            <element signature="e#2582#2822#0" />
+            <element signature="e#2587#2793#0" />
+            <element signature="e#2811#3040#0" />
+            <element signature="e#3054#3268#0" />
+            <element signature="e#3287#3552#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/World Map OOP.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="79" lean-forward="true" selection-start-line="25" selection-start-column="79" selection-end-line="25" selection-end-column="79" />
+        <state relative-caret-position="511">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
           <folding>
-            <marker date="1550684670613" expanded="true" signature="19:24" ph="..." />
+            <marker date="1550770565616" expanded="true" signature="19:24" ph="..." />
           </folding>
         </state>
       </provider>

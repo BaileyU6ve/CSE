@@ -84,6 +84,14 @@ world_map = {
             'SOUTH': 'TRAIN_STATION'
         }
     },
+    'HOLE': {
+        'NAME': "Broken Path",
+        'DESCRIPTION': "The rails are broken here and they lead to a "
+                       "hole. Anymore and you would've fallen in",
+        'PATHS': {
+            'WEST': 'SPLIT_PATH'
+        }
+    },
     'TINY_TOWN': {
         'NAME': "Tiny Town",
         'DESCRIPTION': "This place is all machine, including the people.",
