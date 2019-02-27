@@ -9,7 +9,8 @@ world_map = {
     },
     'CAROUSEL': {
         'NAME': "Carousel ride",
-        'DESCRIPTION': "The rides should be out of order.",
+        'DESCRIPTION': "The rides should be out of order. You can see the "
+                       "restrooms to the east. There's a bush maze opposite of it.",
         'PATHS': {
             'EAST': 'RESTROOMS',
             'WEST': 'MAZE',
@@ -43,7 +44,8 @@ world_map = {
     },
     'ADVENTURE_LAND': {
         'NAME': "Adventure Land",
-        'DESCRIPTION': "This is where most of the rides were.",
+        'DESCRIPTION': "This is where most of the rides were. "
+                       "There's a ride straight ahead and another to the right.",
         'PATHS': {
             'NORTH': 'BUMPER_CARS',
             'EAST': 'ROCKET_COASTER',
@@ -52,7 +54,8 @@ world_map = {
     },
     'BUMPER_CARS': {
         'NAME': "Bumper Cars",
-        'DESCRIPTION': "When you reach the bumper cars, you can see someone riding one.",
+        'DESCRIPTION': "There's someone riding one of the bumper cars. "
+                       "The rides shouldn't be working anymore.",
         'PATHS': {
             'SOUTH': 'ADVENTURE_LAND'
         }
@@ -102,7 +105,8 @@ world_map = {
     },
     'FOUNTAIN': {
         'NAME': "Fountain",
-        'DESCRIPTION': "No water flowed from this fountain anymore.",
+        'DESCRIPTION': "No water flowed from this fountain anymore. "
+                       "Looks like it was the center of the town",
         'PATHS': {
             'NORTH': 'FOOD_AREA',
             'EAST': 'PARK',
