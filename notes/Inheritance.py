@@ -2,6 +2,7 @@ class Vehicle(object):
     def __init__(self, name):
         self.name = name
 
+
 class Car(Vehicle):
     def __init__(self, name, milage):
         super(Car, self).__init__(name)
@@ -25,9 +26,11 @@ class Car(Vehicle):
         self.engine_status = False
         print("You turn off the car")
 
-class Impala(Car)
+
+class Impala(Car):
     def __init__(self):
         super(Impala, self).__init__("Impala", 25)
+
 
 class KeylessCar(Car):
     def __init__(self, name, milage):
@@ -44,6 +47,3 @@ jacob_car.move_forward()
 jacob_car.turn_left()
 jacob_car.move_forward()
 jacob_car.turn_off()
-
-
-

@@ -67,7 +67,7 @@ while playing:
 entrance = Room('Entrance', 'carousel', None, None, None, "You're right outside of the amusement "
                        "park. Everything's dark and abandoned.")
 carousel = Room('Carousel', None, 'entrance', 'restrooms', 'maze', "The rides should be out of order. You can see the "
-                       "restrooms to the east. There's a bush maze opposite of it.")
+                                                        "restrooms to the east. There's a bush maze opposite of it.")
 restrooms = Room('Restrooms', None, None, None, 'carousel', "There's a row of stalls in each "
                                                             "restroom. Nothing works anymore.")
 maze = Room('Bush Maze', 'adventure_land', 'dead_end', 'carousel', None, "There's only one exit in the maze. "
