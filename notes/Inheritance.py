@@ -8,7 +8,7 @@ class Car(Vehicle):
         super(Car, self).__init__(name)
         self.engine_status = False
         self.fuel = 100
-        self. milage = milage
+        self.milage = milage
 
     def start_engine(self):
         self.engine_status = True
