@@ -12,6 +12,8 @@ class Weapon(Item):
     def swing_weapon(self):
         self.durability -= 1
         print("Your weapon's durability gets lower.")
+        if self.durability == 0:
+            print("Your weapon is out of durability. Tape can be used to fix it")
 
 
 class Knife(Weapon):
@@ -38,8 +40,8 @@ class Revolver(Weapon):
         super(Revolver, self).__init__("Revolver", 50, 5)
 
     def shootrevolver(self):
-        self.durability -= 5
-        print("The revolver barely has any ammo.")
+        self.durability -= 1
+        print("The revolver has limited ammo.")
 
 
 class Armor(Item):
@@ -95,15 +97,20 @@ class Bread(Consumable):
         super(Bread, self).__init__("Bread", 10)
 
 
+class Milkshake(Consumable):
+    def __init__(self):
+        super(Milkshake, self).__init__("Milkshake", 50)
+
+
 class Hamburger(Consumable):
     def __init__(self):
-        super(Hamburger, self).__init__("Hamburger", 50)
+        super(Hamburger, self).__init__("Hamburger", 100)
 
 
 class Tape(Consumable):
     def __init__(self):
         super(Tape, self).__init__("Tape", 0)
 
-    def reload(self):
+    def repair(self):
         self.durability += 5
         print("Your weapons have been repaired.")
