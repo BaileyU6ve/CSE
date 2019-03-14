@@ -120,10 +120,10 @@ class Character(object):
         self.armor = armor
 
     def take_damage(self, damage: int):
-        if self.armor.armor_amt > damage:
+        if self.armor.protection > damage:
             print("No damage is done because of some AMAZING armor.")
         else:
-            self.health -= damage - self.armor.armor_amt
+            self.health -= damage - self.armor.protection
             print("%s has %d health left" % (self.name, self.health))
 
     def attack(self, target):
@@ -132,13 +132,13 @@ class Character(object):
 
 
 # Items
-sword = Weapon("Sword", 10, 10)
-canoe = Weapon("Canoe", 42, 10)
-wiebe_armor = Armor("Armor of the gods", 10000000000000000000000000000000000)
+Knife = Weapon("Sword", 15, 10)
+Machete = Weapon("Canoe", 25, 20)
+Vest3 = Armor("Armor of the gods", 30)
 
 # Characters
-orc = Character("Orc1", 100, sword, Armor("Generic Armor ", 2))
-orc2 = Character("Wiebe", 10000, canoe, wiebe_armor)
+orc = Character("Orc1", 100, Knife, Armor("Gloves1", 3))
+orc2 = Character("Wiebe", 10000, Machete, Vest3)
 
 orc.attack(orc2)
 orc2.attack(orc)
