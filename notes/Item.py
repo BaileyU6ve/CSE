@@ -124,11 +124,18 @@ class Character(object):
             print("No damage is done because of some AMAZING armor.")
         else:
             self.health -= damage - self.armor.protection
-            print("%s has %d health left" % (self.name, self.health))
+            if self.health <= 0:
+                print("%s has died" % self.name)
+                self.health = 0
+        print("%s has %d health left" % (self.name, self.health))
 
     def attack(self, target):
         print("%s attacks %s for %d damage" % (self.name, target.name, self.weapon. damage))
         target.take_damage(self.weapon.damage)
+
+    def death(self):
+        if self.health >= 0:
+            print("They have died.")
 
 
 # Items
@@ -141,6 +148,8 @@ orc = Character("Orc1", 100, Knife, Armor("Gloves1", 3))
 orc2 = Character("Wiebe", 10000, Machete, Vest3)
 
 orc.attack(orc2)
+orc2.attack(orc)
+orc2.attack(orc)
 orc2.attack(orc)
 orc2.attack(orc)
 orc2.attack(orc)
