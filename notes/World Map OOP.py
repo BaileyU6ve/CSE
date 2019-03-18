@@ -31,25 +31,6 @@ class Player(object):
         name_of_room = getattr(self.current_location, direction)
         return globals()[name_of_room]
 
-player = Player(entrance)
-playing = True
-directions = ['NORTH', 'SOUTH', 'EAST', 'WEST', 'UP', 'DOWN']
-
-while playing:
-    print(player.current_location.name)
-    print(player.current_location.description)
-    command = input(">_")
-    if command.lower() in ['q', 'quit', 'exit']:
-        playing = False
-    elif command.lower() in directions:
-        try:
-            next_room = player.find_next_room(command)
-            player.move(next_room)
-        except KeyError:
-            print("I can't go that way")
-    else:
-        print("Command Not Found")
-
 
 entrance = Room('Entrance', 'carousel', None, None, None, "You're right outside of the amusement "
                                                           "park. Everything's dark and abandoned.")
@@ -90,3 +71,23 @@ food_area = Room('Food Alley', None, 'fountain', None, 'haunted_house', "All the
                                                                         "You can hear a child crying from the west.")
 haunted_house = Room('Haunted Mansion', None, None, 'food_area', None, "This is the farthest you can get in the park. "
                                                                        "The child's cries are coming from here.")
+
+
+player = Player(entrance)
+playing = True
+directions = ['north', 'south', 'east', 'west', 'up', 'down']
+
+while playing:
+    print(player.current_location.name)
+    print(player.current_location.description)
+    command = input(">_")
+    if command.lower() in ['q', 'quit', 'exit']:
+        playing = False
+    elif command.lower() in directions:
+        try:
+            next_room = player.find_next_room(command)
+            player.move(next_room)
+        except KeyError:
+            print("I can't go that way")
+    else:
+        print("Command Not Found")
