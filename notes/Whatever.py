@@ -49,6 +49,11 @@ class Claw(Weapon):
         super(Claw, self).__init__("Claws", 20, 30)
 
 
+class SledgeHammer(Weapon):
+    def __init__(self):
+        super(SledgeHammer, self).__init__("Sledge Hammer", 40, 50)
+
+
 class Armor(Item):
     def __init__(self, name, protection):
         super(Armor, self).__init__(name)
@@ -144,14 +149,16 @@ class Character(object):
 
 
 class Room(object):
-    def __init__(self, name, north, south, east, west, description):
+    def __init__(self, name, north, south, east, west, description, item, character):
         self.name = name
         self.north = north
         self.south = south
         self.east = east
         self.west = west
         self.description = description
-        self.character = []
+        self.player = []
+        self.item = item
+        self.character = character
 
 
 class Player(object):
@@ -178,44 +185,51 @@ class Player(object):
 
 
 entrance = Room('Entrance', 'carousel', None, None, None, "You're right outside of the amusement "
-                                                          "park. Everything's dark and abandoned.")
+                                                          "park. Everything's dark and abandoned.", Apple, None)
 carousel = Room('Carousel', None, 'entrance', 'restrooms', 'maze', "The rides should be out of order. You can see the "
                                                                    "restrooms to the east. There's a bush maze "
-                                                                   "opposite of it.")
+                                                                   "opposite of it.", Knife, None)
 restrooms = Room('Restrooms', None, None, None, 'carousel', "There's a row of stalls in each "
-                                                            "restroom. Nothing works anymore.")
+                                                            "restroom. Nothing works anymore.", Gloves1, None)
 maze = Room('Bush Maze', 'adventure_land', 'dead_end', 'carousel', None, "There's only one exit in the maze. "
                                                                          "You feel a murderous presence "
-                                                                         "towards the south.")
+                                                                         "towards the south.", Pistol, None)
 dead_end = Room('DEAD END', 'maze', None, None, None, "You find clowns waiting at the end."
-                                                      "You should turn back around.")
+                                                      "You should turn back around.", Bread, None)
 adventure_land = Room('Adventure Land', 'bumper_cars', 'maze', 'rocket_coaster', None, "This is where most of "
                                                                                        "the rides were. "
                                                                                        "There's a ride straight ahead "
-                                                                                       "and another to the right.",)
+                                                                                       "and another to the right.",
+                      Vest1, None)
 bumper_cars = Room('Bumper cars', None, 'adventure_land', None, None, "There's someone riding one of the bumper cars. "
-                                                                      "The rides shouldn't be working anymore.")
+                                                                      "The rides shouldn't be working anymore.",
+                   Gloves2, None)
+
 rocket_coaster = Room('Rocket roller coaster,', None, None, 'train_station', 'adventure_land', "Half of the roller "
                                                                                                "coaster is hanging "
                                                                                                "off of the rails."
                                                                                                "Many accidents "
-                                                                                               "happened here.")
+                                                                                               "happened here.",
+                      Revolver, None)
 train_station = Room('Train Station', 'split_path', None, None, 'rocket_coaster', "You can still ride the train "
-                                                                                  "north form here.")
+                                                                                  "north form here.", Vest2, None)
 split_path = Room('Split path', None, 'train_station', 'hole', 'tiny_town', "You can go east or west from here. "
-                                                                            "You can hear music coming from the west.")
+                                                                            "You can hear music coming from the west.",
+                  Bread, None)
 hole = Room('Broken Path', None, None, None, 'split_path', "The rails are broken here and they lead to a "
-                                                           "hole. Anymore and you would've fallen in")
+                                                           "hole. Anymore and you would've fallen in", Hamburger, None)
 tiny_town = Room('Tiny Town', 'fountain', None, 'split_path', None, "This place is all machine, "
-                                                                    "including the people.")
+                                                                    "including the people.", Machete, None)
 fountain = Room('Fountain', 'food_area', 'tiny_town', 'park', None, "No water flowed from this fountain anymore. "
-                                                                    "Looks like it was the center of the town")
+                                                                    "Looks like it was the center of the town", Vest3, None)
 park = Room('Tiny Park', None, None, None, 'fountain', "Nothing in the park is green and "
                                                        "most of the benches were broken.")
 food_area = Room('Food Alley', None, 'fountain', None, 'haunted_house', "All the food used to be sold here. "
                                                                         "You can hear a child crying from the west.")
 haunted_house = Room('Haunted Mansion', None, None, 'food_area', None, "This is the farthest you can get in the park. "
-                                                                       "The child's cries are coming from here.")
+                                                                       "The child's cries are coming from here.",
+                     Hamburger, None)
+
 
 # Weapons
 knife = Weapon("Pocket Knife", 15, 10)
@@ -242,4 +256,33 @@ tape = Consumable("Tape", 0)
 # Characters
 Clown1 = Character("Killer Clown", 50, knife, None)
 Clown2 = Character("Killer Clown", 50, knife, None)
-Shadow_Figure = Character("Shadow Figure", 100, claw, Vest2)
+Clown3 = Character("Killer Clown", 50, knife, None)
+Hound1 = Character("Hell Hound", 10, claw, None)
+Hound2 = Character("Hell Hound", 10, claw, None)
+Hound3 = Character("Hell Hound", 10, claw, None)
+Shadow_Figure1 = Character("Shadow Figure", 100, claw, Vest2)
+Shadow_Figure2 = Character("Shadow Figure", 100, claw, Vest2)
+Jester = Character("Jester", 300, SledgeHammer, Vest3)
+
+# Player
+player = Player(entrance)
+
+
+playing = True
+directions = ['north', 'south', 'east', 'west', 'up', 'down']
+
+while playing:
+    print(player.current_location.name)
+    print(player.current_location.description)
+    command = input(">_")
+    if command.lower() in ['q', 'quit', 'exit']:
+        playing = False
+    elif command.lower() in directions:
+        try:
+            next_room = player.find_next_room(command)
+            player.move(next_room)
+        except KeyError:
+            print("I can't go that way")
+    else:
+        print("Command Not Found")
+
