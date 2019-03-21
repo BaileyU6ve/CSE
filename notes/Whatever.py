@@ -221,11 +221,13 @@ hole = Room('Broken Path', None, None, None, 'split_path', "The rails are broken
 tiny_town = Room('Tiny Town', 'fountain', None, 'split_path', None, "This place is all machine, "
                                                                     "including the people.", Machete, None)
 fountain = Room('Fountain', 'food_area', 'tiny_town', 'park', None, "No water flowed from this fountain anymore. "
-                                                                    "Looks like it was the center of the town", Vest3, None)
+                                                                    "Looks like it was the center of the town",
+                Vest3, None)
 park = Room('Tiny Park', None, None, None, 'fountain', "Nothing in the park is green and "
-                                                       "most of the benches were broken.")
+                                                       "most of the benches were broken.", Gloves3, None)
 food_area = Room('Food Alley', None, 'fountain', None, 'haunted_house', "All the food used to be sold here. "
-                                                                        "You can hear a child crying from the west.")
+                                                                        "You can hear a child crying from the west.",
+                 Tape, None)
 haunted_house = Room('Haunted Mansion', None, None, 'food_area', None, "This is the farthest you can get in the park. "
                                                                        "The child's cries are coming from here.",
                      Hamburger, None)
@@ -285,4 +287,3 @@ while playing:
             print("I can't go that way")
     else:
         print("Command Not Found")
-
