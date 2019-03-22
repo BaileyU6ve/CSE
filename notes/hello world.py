@@ -82,7 +82,6 @@ f(5)
 f(5000)
 
 
-
 # Distance Formula
 def distance(x1, y1, x2, y2):
     dist = ((x1 - x2) ** 2 + (y2 - y1) ** 2) ** (1 / 2)

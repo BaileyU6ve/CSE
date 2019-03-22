@@ -48,6 +48,7 @@
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.35" value="2" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.38" value="1" />
@@ -81,7 +82,7 @@
           <entry key="project.open.time.78" value="1" />
           <entry key="project.open.time.85" value="1" />
           <entry key="project.open.time.88" value="1" />
-          <entry key="project.opened" value="50" />
+          <entry key="project.opened" value="51" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -99,13 +100,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="32" />
-          <entry key="py" value="22425" />
+          <entry key="py" value="22646" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="32" />
-          <entry key="Python" value="22425" />
+          <entry key="Python" value="22646" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -122,7 +123,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/World Map OOP.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="341">
+                <state relative-caret-position="1462">
                   <caret line="86" column="12" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="12" />
                   <folding>
                     <marker date="1552926289836" expanded="true" signature="682:687" ph="..." />
@@ -134,8 +135,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/hello world.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1865">
-                  <caret line="77" selection-start-line="77" selection-end-line="77" />
+                <state relative-caret-position="338">
+                  <caret line="83" selection-start-line="83" selection-end-line="83" />
                 </state>
               </provider>
             </entry>
@@ -143,7 +144,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Item.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1458">
+                <state relative-caret-position="323">
                   <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
                   <folding>
                     <marker date="1552671390388" expanded="true" signature="927:1119" ph="..." />
@@ -165,8 +166,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Whatever.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="460">
-                  <caret line="289" lean-forward="true" selection-start-line="289" selection-end-line="289" />
+                <state relative-caret-position="-204">
+                  <caret line="235" column="9" lean-forward="true" selection-start-line="235" selection-start-column="9" selection-end-line="235" selection-end-column="9" />
                   <folding>
                     <element signature="e#4784#4923#0" />
                     <element signature="e#5005#5255#0" />
@@ -181,10 +182,11 @@
                     <element signature="e#7916#8065#0" />
                     <element signature="e#8152#8273#0" />
                     <element signature="e#8358#8515#0" />
-                    <element signature="e#8585#8710#0" />
-                    <element signature="e#8784#8938#0" />
-                    <element signature="e#9011#9172#0" />
-                    <marker date="1553186437559" expanded="true" signature="1138:1339" ph="..." />
+                    <element signature="e#8601#8726#0" />
+                    <element signature="e#8815#8969#0" />
+                    <element signature="e#9071#9232#0" />
+                    <marker date="1553274814712" expanded="true" signature="1138:1339" ph="..." />
+                    <marker date="1553274814712" expanded="true" signature="3669:3671" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -212,7 +214,6 @@
         <option value="$PROJECT_DIR$/Bailey Phaphone - Guess Game.py" />
         <option value="$USER_HOME$/Downloads/Bailey Phaphone - Mad Lib 2.py" />
         <option value="$PROJECT_DIR$/Bailey Phaphone - Hangman.py" />
-        <option value="$PROJECT_DIR$/hello world.py" />
         <option value="$PROJECT_DIR$/Challenges.py" />
         <option value="$PROJECT_DIR$/Bailey Phaphone - Fix It.py" />
         <option value="$PROJECT_DIR$/Bailey Phaphone - Challenges.py" />
@@ -223,6 +224,7 @@
         <option value="$PROJECT_DIR$/Inheritance.py" />
         <option value="$PROJECT_DIR$/Item.py" />
         <option value="$PROJECT_DIR$/World Map OOP.py" />
+        <option value="$PROJECT_DIR$/hello world.py" />
         <option value="$PROJECT_DIR$/Whatever.py" />
       </list>
     </option>
@@ -245,7 +247,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -257,6 +258,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -427,8 +429,8 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.447541" visible="true" weight="0.0" />
-      <window_info id="Structure" order="1" sideWeight="0.552459" side_tool="true" visible="true" weight="0.0" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.44590163" visible="true" weight="0.0" />
+      <window_info id="Structure" order="1" sideWeight="0.55409837" side_tool="true" visible="true" weight="0.0" />
       <window_info id="Favorites" order="2" sideWeight="0.50163937" side_tool="true" weight="0.3100304" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -526,29 +528,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Item.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1458">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-          <folding>
-            <marker date="1552671390388" expanded="true" signature="927:1119" ph="..." />
-            <marker date="1552671390388" expanded="true" signature="1524:1924" ph="..." />
-            <marker date="1552671390388" expanded="true" signature="1948:1953" ph="..." />
-            <marker date="1552671390388" expanded="true" signature="2095:2100" ph="..." />
-            <marker date="1552671390388" expanded="true" signature="2298:2382" ph="..." />
-            <marker date="1552671390388" expanded="true" signature="2615:2620" ph="..." />
-            <marker date="1552671390388" expanded="true" signature="3220:3229" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Bailey Phaphone - Adventure Game.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="131" column="6" selection-start-line="131" selection-start-column="6" selection-end-line="131" selection-end-column="6" />
-          <folding>
-            <element signature="e#30#255#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -566,7 +549,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/World Map OOP.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
+        <state relative-caret-position="1462">
           <caret line="86" column="12" selection-start-line="86" selection-start-column="12" selection-end-line="86" selection-end-column="12" />
           <folding>
             <marker date="1552926289836" expanded="true" signature="682:687" ph="..." />
@@ -574,17 +557,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Item.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+          <folding>
+            <marker date="1552671390388" expanded="true" signature="927:1119" ph="..." />
+            <marker date="1552671390388" expanded="true" signature="1524:1924" ph="..." />
+            <marker date="1552671390388" expanded="true" signature="1948:1953" ph="..." />
+            <marker date="1552671390388" expanded="true" signature="2095:2100" ph="..." />
+            <marker date="1552671390388" expanded="true" signature="2298:2382" ph="..." />
+            <marker date="1552671390388" expanded="true" signature="2615:2620" ph="..." />
+            <marker date="1552671390388" expanded="true" signature="3220:3229" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hello world.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1865">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        <state relative-caret-position="338">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Whatever.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="289" lean-forward="true" selection-start-line="289" selection-end-line="289" />
+        <state relative-caret-position="-204">
+          <caret line="235" column="9" lean-forward="true" selection-start-line="235" selection-start-column="9" selection-end-line="235" selection-end-column="9" />
           <folding>
             <element signature="e#4784#4923#0" />
             <element signature="e#5005#5255#0" />
@@ -599,10 +598,11 @@
             <element signature="e#7916#8065#0" />
             <element signature="e#8152#8273#0" />
             <element signature="e#8358#8515#0" />
-            <element signature="e#8585#8710#0" />
-            <element signature="e#8784#8938#0" />
-            <element signature="e#9011#9172#0" />
-            <marker date="1553186437559" expanded="true" signature="1138:1339" ph="..." />
+            <element signature="e#8601#8726#0" />
+            <element signature="e#8815#8969#0" />
+            <element signature="e#9071#9232#0" />
+            <marker date="1553274814712" expanded="true" signature="1138:1339" ph="..." />
+            <marker date="1553274814712" expanded="true" signature="3669:3671" ph="..." />
           </folding>
         </state>
       </provider>
