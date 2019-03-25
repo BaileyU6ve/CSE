@@ -204,7 +204,6 @@ adventure_land = Room('Adventure Land', 'bumper_cars', 'maze', 'rocket_coaster',
 bumper_cars = Room('Bumper cars', None, 'adventure_land', None, None, "There's someone riding one of the bumper cars. "
                                                                       "The rides shouldn't be working anymore.",
                    Gloves2, None)
-
 rocket_coaster = Room('Rocket roller coaster,', None, None, 'train_station', 'adventure_land', "Half of the roller "
                                                                                                "coaster is hanging "
                                                                                                "off of the rails."
@@ -276,6 +275,7 @@ directions = ['north', 'south', 'east', 'west', 'up', 'down']
 while playing:
     print(player.current_location.name)
     print(player.current_location.description)
+    print("There's a %s in the area." % Item)
     command = input(">_")
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
@@ -287,3 +287,10 @@ while playing:
             print("I can't go that way")
     else:
         print("Command Not Found")
+
+"""
+1. Put Items in room (◉ω◉)
+2. Show item is in the room
+3. Pick up the item
+4. Use the item
+"""
