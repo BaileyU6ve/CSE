@@ -63,22 +63,22 @@ class Armor(Item):
 
 class Vest1(Armor):
     def __init__(self):
-        super(Vest1, self).__init__("level 1 Armor Vest ", 5)
+        super(Vest1, self).__init__("level 1 Armor Vest", 5)
 
 
 class Vest2(Armor):
     def __init__(self):
-        super(Vest2, self).__init__("level 2 Armor Vest ", 15)
+        super(Vest2, self).__init__("level 2 Armor Vest", 15)
 
 
 class Vest3(Armor):
     def __init__(self):
-        super(Vest3, self).__init__("level 3 Armor Vest ", 30)
+        super(Vest3, self).__init__("level 3 Armor Vest", 30)
 
 
 class Gloves1(Armor):
     def __init__(self):
-        super(Gloves1, self).__init__("Level 1 Gloves ", 2)
+        super(Gloves1, self).__init__("Level 1 Gloves", 2)
 
 
 class Gloves2(Armor):
@@ -122,32 +122,6 @@ class Tape(Consumable):
         super(Tape, self).__init__("Tape", 0)
 
 
-class Character(object):
-    def __init__(self, name, health: int, weapon, armor):
-        self.name = name
-        self.health = health
-        self.weapon = weapon
-        self.armor = armor
-
-    def take_damage(self, damage: int):
-        if self.armor.protection > damage:
-            print("No damage is done because of some AMAZING armor.")
-        else:
-            self.health -= damage - self.armor.protection
-            if self.health <= 0:
-                print("%s has died" % self.name)
-                self.health = 0
-        print("%s has %d health left" % (self.name, self.health))
-
-    def attack(self, target):
-        print("%s attacks %s for %d damage" % (self.name, target.name, self.weapon. damage))
-        target.take_damage(self.weapon.damage)
-
-    def death(self):
-        if self.health >= 0:
-            print("They have died.")
-
-
 class Room(object):
     def __init__(self, name, north, south, east, west, description, item, character):
         self.name = name
@@ -156,7 +130,6 @@ class Room(object):
         self.east = east
         self.west = west
         self.description = description
-        self.player = []
         self.item = item
         self.character = character
 
@@ -182,6 +155,33 @@ class Player(object):
         """
         name_of_room = getattr(self.current_location, direction)
         return globals()[name_of_room]
+
+
+class Character(object):
+    def __init__(self, name, health: int, weapon, armor):
+        self.name = name
+        self.health = health
+        self.weapon = weapon
+        self.armor = armor
+
+    def take_damage(self, damage: int):
+        if self.armor.protection > damage:
+            print("No damage is done because of some AMAZING armor.")
+        else:
+            self.health -= damage - self.armor.protection
+            if self.health <= 0:
+                print("%s has died" % self.name)
+                self.health = 0
+        print("%s has %d health left" % (self.name, self.health))
+
+    def attack(self, target):
+        print("%s attacks %s for %d damage" % (self.name, target.name, self.weapon. damage))
+        target.take_damage(self.weapon.damage)
+
+    def death(self):
+        if self.health >= 0:
+            Room.character = None
+            print("They have died.")
 
 
 entrance = Room('Entrance', 'carousel', None, None, None, "You're right outside of the amusement "
@@ -216,7 +216,8 @@ split_path = Room('Split path', None, 'train_station', 'hole', 'tiny_town', "You
                                                                             "You can hear music coming from the west.",
                   Bread(), None)
 hole = Room('Broken Path', None, None, None, 'split_path', "The rails are broken here and they lead to a "
-                                                           "hole. Anymore and you would've fallen in", Hamburger(), None)
+                                                           "hole. Anymore and you would've fallen in", Hamburger(),
+            None)
 tiny_town = Room('Tiny Town', 'fountain', None, 'split_path', None, "This place is all machine, "
                                                                     "including the people.", Machete(), None)
 fountain = Room('Fountain', 'food_area', 'tiny_town', 'park', None, "No water flowed from this fountain anymore. "
@@ -275,7 +276,7 @@ directions = ['north', 'south', 'east', 'west', 'up', 'down']
 while playing:
     print(player.current_location.name)
     print(player.current_location.description)
-    print("There's a %s around." % player.current_location.item.name)
+    print("You have picked up a %s." % player.current_location.item.name)
     command = input(">_")
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
@@ -283,10 +284,15 @@ while playing:
         try:
             next_room = player.find_next_room(command)
             player.move(next_room)
+            Player.append = player.current_location.item.name
         except KeyError:
             print("I can't go that way")
     else:
         print("Command Not Found")
+
+    if command.lower() in ['e']:
+        print(Player.Inventory)
+
 
 """
 1. Put Items in room  (◉ω◉)
