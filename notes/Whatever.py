@@ -276,7 +276,7 @@ directions = ['north', 'south', 'east', 'west', 'up', 'down']
 while playing:
     print(player.current_location.name)
     print(player.current_location.description)
-    print("You have picked up a %s." % player.current_location.item.name)
+    print("There's a %s in the area." % player.current_location.item.name)
     command = input(">_")
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
@@ -284,19 +284,22 @@ while playing:
         try:
             next_room = player.find_next_room(command)
             player.move(next_room)
-            Player.append = player.current_location.item.name
         except KeyError:
             print("I can't go that way")
+    elif command.lower() in ['grab']:
+        player.inventory.append(player.current_location.item)
+        Room.item = None
+        print("You have picked up the item.")
+    elif command.lower() in ['i, inventory']:
+        print(list(player.inventory))
     else:
         print("Command Not Found")
 
-    if command.lower() in ['e']:
-        print(Player.Inventory)
 
 
 """
 1. Put Items in room  (◉ω◉)
 2. Show item is in the room  (◉ω◉)
-3. Pick up the item
+3. Pick up the item  (◉ω◉)
 4. Use the item
 """
