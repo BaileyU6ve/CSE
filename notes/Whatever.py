@@ -269,14 +269,14 @@ Jester = Character("Jester", 300, SledgeHammer, Vest3)
 # Player
 player = Player(entrance)
 
-
+Item = True
 playing = True
 directions = ['north', 'south', 'east', 'west', 'up', 'down']
-
 while playing:
     print(player.current_location.name)
     print(player.current_location.description)
-    print("There's a %s in the area." % player.current_location.item.name)
+    if Item == True:
+        print("There's a %s in the area." % player.current_location.item.name)
     command = input(">_")
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
@@ -284,17 +284,18 @@ while playing:
         try:
             next_room = player.find_next_room(command)
             player.move(next_room)
+            Item = True
         except KeyError:
             print("I can't go that way")
     elif command.lower() in ['grab']:
-        player.inventory.append(player.current_location.item)
-        Room.item = None
+        player.inventory.append(player.current_location.item.name)
+        Item = False
         print("You have picked up the item.")
-    elif command.lower() in ['i, inventory']:
+    elif command.lower() in ['i', 'inventory']:
+        print("Your current inventory is:")
         print(list(player.inventory))
     else:
         print("Command Not Found")
-
 
 
 """
