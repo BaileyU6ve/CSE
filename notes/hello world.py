@@ -200,7 +200,7 @@ print(food_list)
 food_list.insert(1, "eggo waffles")
 print(food_list)
 
-#Removing things from a list
+# Removing things from a list
 food_list.remove("salad")
 print(food_list)
 

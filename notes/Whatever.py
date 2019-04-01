@@ -294,6 +294,8 @@ while playing:
     elif command.lower() in ['i', 'inventory']:
         print("Your current inventory is:")
         print(list(player.inventory))
+    elif command.lower() in ['consume']:
+        print("You used the item.")
     else:
         print("Command Not Found")
 
