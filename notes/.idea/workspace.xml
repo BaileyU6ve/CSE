@@ -23,7 +23,7 @@
     <SUITE FILE_PATH="coverage/notes$Item.coverage" NAME="Item Coverage Results" MODIFIED="1552924777155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Bailey_Phaphone___Object_Notes.coverage" NAME="Bailey Phaphone - Object Notes Coverage Results" MODIFIED="1550252435779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Bailey_Phaphone___Fix_It.coverage" NAME="Bailey Phaphone - Fix It Coverage Results" MODIFIED="1544031408419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$Whatever.coverage" NAME="Whatever Coverage Results" MODIFIED="1554136929887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$Whatever.coverage" NAME="Whatever Coverage Results" MODIFIED="1554221961758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -68,7 +68,7 @@
           <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.52" value="2" />
           <entry key="project.open.time.53" value="3" />
-          <entry key="project.open.time.54" value="1" />
+          <entry key="project.open.time.54" value="2" />
           <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.57" value="2" />
@@ -84,31 +84,31 @@
           <entry key="project.open.time.78" value="1" />
           <entry key="project.open.time.85" value="1" />
           <entry key="project.open.time.88" value="1" />
-          <entry key="project.opened" value="57" />
+          <entry key="project.opened" value="58" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Baley Phaphone - Mad Lib 2" value="1" />
-          <entry key="py" value="45" />
+          <entry key="py" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="45" />
+          <entry key="Python" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="32" />
-          <entry key="py" value="24012" />
+          <entry key="py" value="24077" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="32" />
-          <entry key="Python" value="24012" />
+          <entry key="Python" value="24077" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -119,65 +119,57 @@
     <favorites_list name="notes" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.3472012">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/World Map OOP.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="663">
-                  <caret line="66" column="11" lean-forward="true" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="11" />
-                  <folding>
-                    <marker date="1552926289836" expanded="true" signature="682:687" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/hello world.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-421">
-                  <caret line="205" lean-forward="true" selection-start-line="205" selection-end-line="205" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Whatever.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="987">
-                  <caret line="297" column="35" lean-forward="true" selection-start-line="297" selection-start-column="35" selection-end-line="297" selection-end-column="35" />
-                  <folding>
-                    <element signature="e#4801#4940#0" />
-                    <element signature="e#5024#5274#0" />
-                    <element signature="e#5351#5480#0" />
-                    <element signature="e#5572#5809#0" />
-                    <element signature="e#5881#6003#0" />
-                    <element signature="e#6107#6472#0" />
-                    <element signature="e#6581#6742#0" />
-                    <element signature="e#6875#7353#0" />
-                    <element signature="e#7477#7609#0" />
-                    <element signature="e#7702#7858#0" />
-                    <element signature="e#7952#8101#0" />
-                    <element signature="e#8202#8323#0" />
-                    <element signature="e#8410#8567#0" />
-                    <element signature="e#8655#8780#0" />
-                    <element signature="e#8871#9025#0" />
-                    <element signature="e#9129#9290#0" />
-                    <marker date="1554136471160" expanded="true" signature="1138:1339" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Whatever.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="290" column="66" lean-forward="true" selection-start-line="290" selection-start-column="66" selection-end-line="290" selection-end-column="66" />
+              <folding>
+                <element signature="e#4801#4940#0" />
+                <element signature="e#5024#5274#0" />
+                <element signature="e#5351#5480#0" />
+                <element signature="e#8871#9025#0" />
+                <element signature="e#9129#9290#0" />
+                <element signature="e#6105#6342#0" />
+                <element signature="e#6414#6536#0" />
+                <element signature="e#6640#7005#0" />
+                <element signature="e#7114#7275#0" />
+                <element signature="e#7408#7886#0" />
+                <element signature="e#8010#8142#0" />
+                <element signature="e#8235#8391#0" />
+                <element signature="e#8485#8634#0" />
+                <element signature="e#8735#8856#0" />
+                <element signature="e#8943#9100#0" />
+                <element signature="e#9188#9313#0" />
+                <marker date="1554223467129" expanded="true" signature="1138:1339" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/World Map OOP.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="43" column="94" lean-forward="true" selection-start-line="43" selection-start-column="94" selection-end-line="43" selection-end-column="94" />
+              <folding>
+                <marker date="1552926289836" expanded="true" signature="682:687" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hello world.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3485">
+              <caret line="205" selection-start-line="205" selection-end-line="205" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -207,8 +199,8 @@
         <option value="$PROJECT_DIR$/Inheritance.py" />
         <option value="$PROJECT_DIR$/Item.py" />
         <option value="$PROJECT_DIR$/World Map OOP.py" />
-        <option value="$PROJECT_DIR$/Whatever.py" />
         <option value="$PROJECT_DIR$/hello world.py" />
+        <option value="$PROJECT_DIR$/Whatever.py" />
       </list>
     </option>
   </component>
@@ -412,8 +404,8 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.43606558" visible="true" weight="0.0" />
-      <window_info id="Structure" order="1" sideWeight="0.56393445" side_tool="true" visible="true" weight="0.0" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.43442622" visible="true" weight="0.0" />
+      <window_info id="Structure" order="1" sideWeight="0.56557375" side_tool="true" visible="true" weight="0.0" />
       <window_info id="Favorites" order="2" sideWeight="0.50163937" side_tool="true" weight="0.3100304" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -533,15 +525,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hello world.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-421">
-          <caret line="205" lean-forward="true" selection-start-line="205" selection-end-line="205" />
+        <state relative-caret-position="3485">
+          <caret line="205" selection-start-line="205" selection-end-line="205" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/World Map OOP.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="66" column="11" lean-forward="true" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="11" />
+        <state relative-caret-position="137">
+          <caret line="43" column="94" lean-forward="true" selection-start-line="43" selection-start-column="94" selection-end-line="43" selection-end-column="94" />
           <folding>
             <marker date="1552926289836" expanded="true" signature="682:687" ph="..." />
           </folding>
@@ -550,26 +542,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Whatever.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="987">
-          <caret line="297" column="35" lean-forward="true" selection-start-line="297" selection-start-column="35" selection-end-line="297" selection-end-column="35" />
+        <state relative-caret-position="532">
+          <caret line="290" column="66" lean-forward="true" selection-start-line="290" selection-start-column="66" selection-end-line="290" selection-end-column="66" />
           <folding>
             <element signature="e#4801#4940#0" />
             <element signature="e#5024#5274#0" />
             <element signature="e#5351#5480#0" />
-            <element signature="e#5572#5809#0" />
-            <element signature="e#5881#6003#0" />
-            <element signature="e#6107#6472#0" />
-            <element signature="e#6581#6742#0" />
-            <element signature="e#6875#7353#0" />
-            <element signature="e#7477#7609#0" />
-            <element signature="e#7702#7858#0" />
-            <element signature="e#7952#8101#0" />
-            <element signature="e#8202#8323#0" />
-            <element signature="e#8410#8567#0" />
-            <element signature="e#8655#8780#0" />
             <element signature="e#8871#9025#0" />
             <element signature="e#9129#9290#0" />
-            <marker date="1554136471160" expanded="true" signature="1138:1339" ph="..." />
+            <element signature="e#6105#6342#0" />
+            <element signature="e#6414#6536#0" />
+            <element signature="e#6640#7005#0" />
+            <element signature="e#7114#7275#0" />
+            <element signature="e#7408#7886#0" />
+            <element signature="e#8010#8142#0" />
+            <element signature="e#8235#8391#0" />
+            <element signature="e#8485#8634#0" />
+            <element signature="e#8735#8856#0" />
+            <element signature="e#8943#9100#0" />
+            <element signature="e#9188#9313#0" />
+            <marker date="1554223467129" expanded="true" signature="1138:1339" ph="..." />
           </folding>
         </state>
       </provider>

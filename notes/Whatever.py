@@ -190,7 +190,13 @@ carousel = Room('Carousel', None, 'entrance', 'restrooms', 'maze', "The rides sh
                                                                    "restrooms to the east. There's a bush maze "
                                                                    "opposite of it.", Knife(), None)
 restrooms = Room('Restrooms', None, None, None, 'carousel', "There's a row of stalls in each "
-                                                            "restroom. Nothing works anymore.", Gloves1(), None)
+                                                            "restroom. Nothing works anymore.", Gloves1(), )
+food_area = Room('Food Alley', None, 'fountain', None, 'haunted_house', "All the food used to be sold here. "
+                                                                        "You can hear a child crying from the west.",
+                 Tape(), None)
+haunted_house = Room('Haunted Mansion', None, None, 'food_area', None, "This is the farthest you can get in the park. "
+                                                                       "The child's cries are coming from here.",
+                     Hamburger(), None)
 maze = Room('Bush Maze', 'adventure_land', 'dead_end', 'carousel', None, "There's only one exit in the maze. "
                                                                          "You feel a murderous presence "
                                                                          "towards the south.", Pistol(), None)
@@ -225,12 +231,6 @@ fountain = Room('Fountain', 'food_area', 'tiny_town', 'park', None, "No water fl
                 Vest3(), None)
 park = Room('Tiny Park', None, None, None, 'fountain', "Nothing in the park is green and "
                                                        "most of the benches were broken.", Gloves3(), None)
-food_area = Room('Food Alley', None, 'fountain', None, 'haunted_house', "All the food used to be sold here. "
-                                                                        "You can hear a child crying from the west.",
-                 Tape(), None)
-haunted_house = Room('Haunted Mansion', None, None, 'food_area', None, "This is the farthest you can get in the park. "
-                                                                       "The child's cries are coming from here.",
-                     Hamburger(), None)
 
 
 # Weapons
@@ -295,10 +295,9 @@ while playing:
         print("Your current inventory is:")
         print(list(player.inventory))
     elif command.lower() in ['consume']:
-        print("You used the item.")
+        print("You used the item")
     else:
         print("Command Not Found")
-
 
 """
 1. Put Items in room  (◉ω◉)
