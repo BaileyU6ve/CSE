@@ -190,7 +190,7 @@ carousel = Room('Carousel', None, 'entrance', 'restrooms', 'maze', "The rides sh
                                                                    "restrooms to the east. There's a bush maze "
                                                                    "opposite of it.", Knife(), None)
 restrooms = Room('Restrooms', None, None, None, 'carousel', "There's a row of stalls in each "
-                                                            "restroom. Nothing works anymore.", Gloves1(), )
+                                                            "restroom. Nothing works anymore.", Gloves1(), None)
 food_area = Room('Food Alley', None, 'fountain', None, 'haunted_house', "All the food used to be sold here. "
                                                                         "You can hear a child crying from the west.",
                  Tape(), None)
@@ -275,8 +275,8 @@ directions = ['north', 'south', 'east', 'west', 'up', 'down']
 while playing:
     print(player.current_location.name)
     print(player.current_location.description)
-    if Item == True:
-        print("There's a %s in the area." % player.current_location.item.name)
+    if Item is True:
+        print("There's a(n) %s in the area." % player.current_location.item.name)
     command = input(">_")
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
@@ -295,6 +295,7 @@ while playing:
         print("Your current inventory is:")
         print(list(player.inventory))
     elif command.lower() in ['consume']:
+        if 
         print("You used the item")
     else:
         print("Command Not Found")
