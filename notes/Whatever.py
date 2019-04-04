@@ -134,29 +134,6 @@ class Room(object):
         self.character = character
 
 
-class Player(object):
-    def __init__(self, starting_location):
-        self.current_location = starting_location
-        self.inventory = []
-
-    def move(self, new_location):
-        """This moves the player to a new room
-
-        :param new_location: The room object of which you are going to
-        """
-        self.current_location = new_location
-
-    def find_next_room(self, direction):
-        """This method searches the current room to see if a room
-        exists in that direction.
-
-        :param direction: The direction that you want to move
-        :return:
-        """
-        name_of_room = getattr(self.current_location, direction)
-        return globals()[name_of_room]
-
-
 class Character(object):
     def __init__(self, name, health: int, weapon, armor):
         self.name = name
@@ -184,6 +161,30 @@ class Character(object):
             print("They have died.")
 
 
+class Player(Character):
+    def __init__(self, starting_location):
+        super(Player, self).__init__("Player", 100, None, None)
+        self.current_location = starting_location
+        self.inventory = []
+
+    def move(self, new_location):
+        """This moves the player to a new room
+
+        :param new_location: The room object of which you are going to
+        """
+        self.current_location = new_location
+
+    def find_next_room(self, direction):
+        """This method searches the current room to see if a room
+        exists in that direction.
+
+        :param direction: The direction that you want to move
+        :return:
+        """
+        name_of_room = getattr(self.current_location, direction)
+        return globals()[name_of_room]
+
+
 entrance = Room('Entrance', 'carousel', None, None, None, "You're right outside of the amusement "
                                                           "park. Everything's dark and abandoned.", Apple(), None)
 carousel = Room('Carousel', None, 'entrance', 'restrooms', 'maze', "The rides should be out of order. You can see the "
@@ -192,11 +193,11 @@ carousel = Room('Carousel', None, 'entrance', 'restrooms', 'maze', "The rides sh
 restrooms = Room('Restrooms', None, None, None, 'carousel', "There's a row of stalls in each "
                                                             "restroom. Nothing works anymore.", Gloves1(), None)
 food_area = Room('Food Alley', None, 'fountain', None, 'haunted_house', "All the food used to be sold here. "
-                                                                        "You can hear a child crying from the west.",
-                 Tape(), None)
+                                                                        "You can hear a child crying from the west."
+                                                                        "", Tape(), None)
 haunted_house = Room('Haunted Mansion', None, None, 'food_area', None, "This is the farthest you can get in the park. "
-                                                                       "The child's cries are coming from here.",
-                     Hamburger(), None)
+                                                                       "The child's cries are coming from here."
+                                                                       "", Hamburger(), None)
 maze = Room('Bush Maze', 'adventure_land', 'dead_end', 'carousel', None, "There's only one exit in the maze. "
                                                                          "You feel a murderous presence "
                                                                          "towards the south.", Pistol(), None)
@@ -205,33 +206,32 @@ dead_end = Room('DEAD END', 'maze', None, None, None, "You find clowns waiting a
 adventure_land = Room('Adventure Land', 'bumper_cars', 'maze', 'rocket_coaster', None, "This is where most of "
                                                                                        "the rides were. "
                                                                                        "There's a ride straight ahead "
-                                                                                       "and another to the right.",
-                      Vest1(), None)
+                                                                                       "and another to the right."
+                                                                                       "", Vest1(), None)
 bumper_cars = Room('Bumper cars', None, 'adventure_land', None, None, "There's someone riding one of the bumper cars. "
-                                                                      "The rides shouldn't be working anymore.",
-                   Gloves2(), None)
+                                                                      "The rides shouldn't be working anymore."
+                                                                      "", Gloves2(), None)
 rocket_coaster = Room('Rocket roller coaster,', None, None, 'train_station', 'adventure_land', "Half of the roller "
                                                                                                "coaster is hanging "
                                                                                                "off of the rails."
                                                                                                "Many accidents "
-                                                                                               "happened here.",
-                      Revolver(), None)
+                                                                                               "happened here."
+                                                                                               "", Revolver(), None)
 train_station = Room('Train Station', 'split_path', None, None, 'rocket_coaster', "You can still ride the train "
                                                                                   "north form here.", Vest2(), None)
 split_path = Room('Split path', None, 'train_station', 'hole', 'tiny_town', "You can go east or west from here. "
-                                                                            "You can hear music coming from the west.",
-                  Bread(), None)
+                                                                            "You can hear music coming from the west."
+                                                                            "", Bread(), None)
 hole = Room('Broken Path', None, None, None, 'split_path', "The rails are broken here and they lead to a "
-                                                           "hole. Anymore and you would've fallen in", Hamburger(),
-            None)
+                                                           "hole. Anymore and you would've fallen in"
+                                                           "", Hamburger(), None)
 tiny_town = Room('Tiny Town', 'fountain', None, 'split_path', None, "This place is all machine, "
                                                                     "including the people.", Machete(), None)
 fountain = Room('Fountain', 'food_area', 'tiny_town', 'park', None, "No water flowed from this fountain anymore. "
-                                                                    "Looks like it was the center of the town",
-                Vest3(), None)
+                                                                    "Looks like it was the center of the town"
+                                                                    "", Vest3(), None)
 park = Room('Tiny Park', None, None, None, 'fountain', "Nothing in the park is green and "
                                                        "most of the benches were broken.", Gloves3(), None)
-
 
 # Weapons
 knife = Weapon("Pocket Knife", 15, 10)
@@ -295,10 +295,14 @@ while playing:
         print("Your current inventory is:")
         print(list(player.inventory))
     elif command.lower() in ['consume']:
-        if 
-        print("You used the item")
+        if player.inventory == Item:
+            print("You used the item")
+        else:
+            print("You have no item that can be used.")
+
     else:
         print("Command Not Found")
+        print()
 
 """
 1. Put Items in room  (◉ω◉)
