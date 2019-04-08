@@ -156,7 +156,7 @@ class Character(object):
         target.take_damage(self.weapon.damage)
 
     def death(self):
-        if self.health >= 0:
+        if self.health <= 0:
             Room.character = None
             print("They have died.")
 
@@ -291,9 +291,16 @@ while playing:
         player.inventory.append(player.current_location.item.name)
         Item = False
         print("You have picked up the item.")
+    elif command.lower() in ['stats']:
+        print("Player Health - %s" % player.health)
+        print("Player Weapon - %s" % player.weapon)
+        print("Player Armor - %s" % player.armor)
+        print()
     elif command.lower() in ['i', 'inventory']:
         print("Your current inventory is:")
         print(list(player.inventory))
+    elif command.lower() in ['equip', 'e']:
+        print("You've equipped some armor.")
     elif command.lower() in ['consume']:
         if player.inventory == Item:
             print("You used the item")
@@ -308,5 +315,5 @@ while playing:
 1. Put Items in room  (◉ω◉)
 2. Show item is in the room  (◉ω◉)
 3. Pick up the item  (◉ω◉)
-4. Use the item
+4. Use the item  
 """
