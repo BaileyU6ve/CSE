@@ -161,6 +161,51 @@ class Character(object):
             print("They have died.")
 
 
+class Clown1(Character):
+    def __init__(self):
+        super(Clown1, self).__init__("Killer Clown", 50, Knife, None)
+
+
+class Clown2(Character):
+    def __init__(self):
+        super(Clown2, self).__init__("Killer Clown", 50, Knife, None)
+
+
+class Clown3(Character):
+    def __init__(self):
+        super(Clown3, self).__init__("Killer Clown", 50, Knife, None)
+
+
+class Hound1(Character):
+    def __init__(self):
+        super(Hound1, self).__init__("Hell Hound", 10, Claw, None)
+
+
+class Hound2(Character):
+    def __init__(self):
+        super(Hound2, self).__init__("Hell Hound", 10, Claw, None)
+
+
+class Hound3(Character):
+    def __init__(self):
+        super(Hound3, self).__init__("Hell Hound", 10, Claw, None)
+
+
+class ShadowFigure1(Character):
+    def __init__(self):
+        super(ShadowFigure1, self).__init__("Shadow Figure", 100, Claw, Vest2)
+
+
+class ShadowFigure2(Character):
+    def __init__(self):
+        super(ShadowFigure2, self).__init__("Shadow Figure", 100, Claw, Vest2)
+
+
+class Jester(Character):
+    def __init__(self):
+        super(Jester, self).__init__("Jester", 300, SledgeHammer, Vest3)
+
+
 class Player(Character):
     def __init__(self, starting_location):
         super(Player, self).__init__("Player", 100, None, None)
@@ -191,32 +236,26 @@ carousel = Room('Carousel', None, 'entrance', 'restrooms', 'maze', "The rides sh
                                                                    "restrooms to the east. There's a bush maze "
                                                                    "opposite of it.", Knife(), None)
 restrooms = Room('Restrooms', None, None, None, 'carousel', "There's a row of stalls in each "
-                                                            "restroom. Nothing works anymore.", Gloves1(), None)
-food_area = Room('Food Alley', None, 'fountain', None, 'haunted_house', "All the food used to be sold here. "
-                                                                        "You can hear a child crying from the west."
-                                                                        "", Tape(), None)
-haunted_house = Room('Haunted Mansion', None, None, 'food_area', None, "This is the farthest you can get in the park. "
-                                                                       "The child's cries are coming from here."
-                                                                       "", Hamburger(), None)
+                                                            "restroom. Nothing works anymore.", Gloves1(), Clown1)
 maze = Room('Bush Maze', 'adventure_land', 'dead_end', 'carousel', None, "There's only one exit in the maze. "
                                                                          "You feel a murderous presence "
                                                                          "towards the south.", Pistol(), None)
 dead_end = Room('DEAD END', 'maze', None, None, None, "You find clowns waiting at the end."
-                                                      "You should turn back around.", Bread(), None)
+                                                      "You should turn back around.", Bread(), Clown2)
 adventure_land = Room('Adventure Land', 'bumper_cars', 'maze', 'rocket_coaster', None, "This is where most of "
                                                                                        "the rides were. "
                                                                                        "There's a ride straight ahead "
                                                                                        "and another to the right."
-                                                                                       "", Vest1(), None)
+                                                                                       "", Vest1(), Hound1)
 bumper_cars = Room('Bumper cars', None, 'adventure_land', None, None, "There's someone riding one of the bumper cars. "
                                                                       "The rides shouldn't be working anymore."
-                                                                      "", Gloves2(), None)
+                                                                      "", Gloves2(), ShadowFigure1)
 rocket_coaster = Room('Rocket roller coaster,', None, None, 'train_station', 'adventure_land', "Half of the roller "
                                                                                                "coaster is hanging "
                                                                                                "off of the rails."
                                                                                                "Many accidents "
                                                                                                "happened here."
-                                                                                               "", Revolver(), None)
+                                                                                               "", Revolver(), Hound2)
 train_station = Room('Train Station', 'split_path', None, None, 'rocket_coaster', "You can still ride the train "
                                                                                   "north form here.", Vest2(), None)
 split_path = Room('Split path', None, 'train_station', 'hole', 'tiny_town', "You can go east or west from here. "
@@ -224,14 +263,20 @@ split_path = Room('Split path', None, 'train_station', 'hole', 'tiny_town', "You
                                                                             "", Bread(), None)
 hole = Room('Broken Path', None, None, None, 'split_path', "The rails are broken here and they lead to a "
                                                            "hole. Anymore and you would've fallen in"
-                                                           "", Hamburger(), None)
+                                                           "", Hamburger(), Hound3)
 tiny_town = Room('Tiny Town', 'fountain', None, 'split_path', None, "This place is all machine, "
-                                                                    "including the people.", Machete(), None)
+                                                                    "including the people.", Machete(), ShadowFigure2)
 fountain = Room('Fountain', 'food_area', 'tiny_town', 'park', None, "No water flowed from this fountain anymore. "
                                                                     "Looks like it was the center of the town"
                                                                     "", Vest3(), None)
 park = Room('Tiny Park', None, None, None, 'fountain', "Nothing in the park is green and "
-                                                       "most of the benches were broken.", Gloves3(), None)
+                                                       "most of the benches were broken.", Gloves3(), Clown3)
+food_area = Room('Food Alley', None, 'fountain', None, 'haunted_house', "All the food used to be sold here. "
+                                                                        "You can hear a child crying from the west."
+                                                                        "", Tape(), None)
+haunted_house = Room('Haunted Mansion', None, None, 'food_area', None, "This is the farthest you can get in the park. "
+                                                                       "The child's cries are coming from here."
+                                                                       "", Hamburger(), Jester)
 
 # Weapons
 knife = Weapon("Pocket Knife", 15, 10)
@@ -262,8 +307,8 @@ Clown3 = Character("Killer Clown", 50, knife, None)
 Hound1 = Character("Hell Hound", 10, claw, None)
 Hound2 = Character("Hell Hound", 10, claw, None)
 Hound3 = Character("Hell Hound", 10, claw, None)
-Shadow_Figure1 = Character("Shadow Figure", 100, claw, Vest2)
-Shadow_Figure2 = Character("Shadow Figure", 100, claw, Vest2)
+ShadowFigure1 = Character("Shadow Figure", 100, claw, Vest2)
+ShadowFigure2 = Character("Shadow Figure", 100, claw, Vest2)
 Jester = Character("Jester", 300, SledgeHammer, Vest3)
 
 # Player
