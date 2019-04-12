@@ -236,11 +236,12 @@ carousel = Room('Carousel', None, 'entrance', 'restrooms', 'maze', "The rides sh
                                                                    "restrooms to the east. There's a bush maze "
                                                                    "opposite of it.", Knife(), None)
 restrooms = Room('Restrooms', None, None, None, 'carousel', "There's a row of stalls in each "
-                                                            "restroom. Nothing works anymore.", Gloves1(), Clown1)
+                                                            "restroom. There's Killer "
+                                                            "Clowns Here!?.", Gloves1(), Clown1)
 maze = Room('Bush Maze', 'adventure_land', 'dead_end', 'carousel', None, "There's only one exit in the maze. "
                                                                          "You feel a murderous presence "
                                                                          "towards the south.", Pistol(), None)
-dead_end = Room('DEAD END', 'maze', None, None, None, "You find clowns waiting at the end."
+dead_end = Room('DEAD END', 'maze', None, None, None, "You find a clown waiting at the end."
                                                       "You should turn back around.", Bread(), Clown2)
 adventure_land = Room('Adventure Land', 'bumper_cars', 'maze', 'rocket_coaster', None, "This is where most of "
                                                                                        "the rides were. "
@@ -255,7 +256,10 @@ rocket_coaster = Room('Rocket roller coaster,', None, None, 'train_station', 'ad
                                                                                                "off of the rails."
                                                                                                "Many accidents "
                                                                                                "happened here."
-                                                                                               "", Revolver(), Hound2)
+                                                                                               "There's a "
+                                                                                               "train station "
+                                                                                               "east of here.",
+                      Revolver(), None)
 train_station = Room('Train Station', 'split_path', None, None, 'rocket_coaster', "You can still ride the train "
                                                                                   "north form here.", Vest2(), None)
 split_path = Room('Split path', None, 'train_station', 'hole', 'tiny_town', "You can go east or west from here. "
@@ -268,7 +272,7 @@ tiny_town = Room('Tiny Town', 'fountain', None, 'split_path', None, "This place 
                                                                     "including the people.", Machete(), ShadowFigure2)
 fountain = Room('Fountain', 'food_area', 'tiny_town', 'park', None, "No water flowed from this fountain anymore. "
                                                                     "Looks like it was the center of the town"
-                                                                    "", Vest3(), None)
+                                                                    "", Vest3(), Hound2)
 park = Room('Tiny Park', None, None, None, 'fountain', "Nothing in the park is green and "
                                                        "most of the benches were broken.", Gloves3(), Clown3)
 food_area = Room('Food Alley', None, 'fountain', None, 'haunted_house', "All the food used to be sold here. "
