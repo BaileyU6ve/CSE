@@ -355,7 +355,6 @@ while playing:
             print("You used the item")
         else:
             print("You have no item that can be used.")
-
     else:
         print("Command Not Found")
         print()
