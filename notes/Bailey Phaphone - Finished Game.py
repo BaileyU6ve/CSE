@@ -327,6 +327,7 @@ while playing:
     if Item is True:
         print("There's a(n) %s in the area." % player.current_location.item.name)
     command = input(">_")
+    print()
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
     elif command.lower() in directions:
