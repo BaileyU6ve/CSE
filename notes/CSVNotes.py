@@ -47,6 +47,13 @@ def all_16_digits(num: str):
 # print("OK")
 
 
+def reverse_it(string):
+    print(string[::-1])
+
+
+reverse_it("Hello World")
+
+
 with open("Book1.csv", 'r') as old_csv:
     with open("MyNew.csv", 'w', newline='') as new_csv:
         reader = csv.reader(old_csv)

@@ -30,9 +30,3 @@ while guesses > 0 and (len(word_list)) > 0:
                 output.pop(i)
                 output.insert(i, guess)
             print("".join(output))
-
-
-
-
-
-
