@@ -8,12 +8,6 @@
 # The check digit (the last number of the card) is the amount that you would need to add to get a multiple of 10
 
 
-def validate(num: str):
-    if not all_16_digits(num):
-        drop_last_num("4556737586899855")
-        reverse("4556737586899855")
-
-
 def all_16_digits(num: str):
     if len(num) == 16:
         print("Everything has 16 digits")
@@ -26,10 +20,25 @@ def drop_last_num(num: str):
     list_num.pop(15)
     print("The last digit was removed")
     print(list_num)
+    return list_num
 
 
-def reverse(list_num: str):
+def reverse(num: str):
+    list_num = list(num)
     print(list_num[::-1])
+
+
+def multiply(num: str):
+    for i in list_num:
+        i * 2 if num % 2 == 0 else 
+
+
+
+
+def validate(num: str):
+    if not all_16_digits(num):
+        new_list = drop_last_num(num)
+        reverse(new_list)
 
 
 print(validate("4556737586899855"))
