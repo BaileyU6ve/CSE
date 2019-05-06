@@ -29,10 +29,10 @@ def reverse(num: str):
 
 
 def multiply(num: str):
+    list_num = list(num)
+    rev = (list_num[::-1])
     for i in list_num:
-        i * 2 if num % 2 == 0 else 
-
-
+        i * 2 if num % 2 == 0
 
 
 def validate(num: str):
@@ -42,3 +42,6 @@ def validate(num: str):
 
 
 print(validate("4556737586899855"))
+
+
+
