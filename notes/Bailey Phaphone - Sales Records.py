@@ -5,12 +5,13 @@ with open("Sales Records.csv", 'r') as old_csv:
         reader = csv.reader(old_csv)
         writer = csv.writer(new_csv)
         for row in reader:
-            row = (row[13])
+            row = (row[2])
 
 
-def biggest_num(list):
-    tp = list(row[13])
-    print("The biggest number is: %s" % max(tp))
+def total():
+    sum(row[13]) if row[2] == "Fruits" else None
 
 
-print(biggest_num)
+
+
+
