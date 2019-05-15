@@ -35,6 +35,14 @@ def multiply(num: str):
         i * 2 if rev % 2 == 0
 
 
+def subtract(num: str):
+    list_num = list(num)
+    if i in list_num < 9:
+        subtract(9)
+        print(list_num)
+
+
+
 def validate(num: str):
     if not all_16_digits(num):
         new_list = drop_last_num(num)

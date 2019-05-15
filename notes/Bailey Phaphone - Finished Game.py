@@ -238,8 +238,8 @@ carousel = Room('Carousel', None, 'entrance', 'restrooms', 'maze', "The rides sh
 restrooms = Room('Restrooms', None, None, None, 'carousel', "There's a row of stalls in each "
                                                             "restroom. There's Killer "
                                                             "Clowns Here!?.", Gloves1(), Clown1)
-maze = Room('Bush Maze', 'adventure_land', 'dead_end', 'carousel', None, "There's only one exit in the maze. "
-                                                                         "You feel a murderous presence "
+maze = Room('Bush Maze', 'adventure_land', 'dead_end', 'carousel', None, "The exit is towards the north, but. "
+                                                                         "you feel a murderous presence "
                                                                          "towards the south.", Pistol(), None)
 dead_end = Room('DEAD END', 'maze', None, None, None, "You find a clown waiting at the end."
                                                       "You should turn back around.", Bread(), Clown2)
@@ -266,12 +266,14 @@ split_path = Room('Split path', None, 'train_station', 'hole', 'tiny_town', "You
                                                                             "You can hear music coming from the west."
                                                                             "", Bread(), None)
 hole = Room('Broken Path', None, None, None, 'split_path', "The rails are broken here and they lead to a "
-                                                           "hole. Anymore and you would've fallen in"
+                                                           "hole. Any further and you would've fallen in"
                                                            "", Hamburger(), Hound3)
 tiny_town = Room('Tiny Town', 'fountain', None, 'split_path', None, "This place is all machine, "
-                                                                    "including the people.", Machete(), ShadowFigure2)
+                                                                    "including the people. The "
+                                                                    "center fountain "
+                                                                    "is north of here.", Machete(), ShadowFigure2)
 fountain = Room('Fountain', 'food_area', 'tiny_town', 'park', None, "No water flowed from this fountain anymore. "
-                                                                    "Looks like it was the center of the town"
+                                                                    "Looks like there's a park to the east."
                                                                     "", Vest3(), Hound2)
 park = Room('Tiny Park', None, None, None, 'fountain', "Nothing in the park is green and "
                                                        "most of the benches were broken.", Gloves3(), Clown3)

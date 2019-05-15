@@ -5,6 +5,7 @@ with open("Sales Records.csv", 'r') as old_csv:
         reader = csv.reader(old_csv)
         writer = csv.writer(new_csv)
         item_list = []
+        totals_list = []
         totalA = 0
         totalB = 0
         totalC = 0
