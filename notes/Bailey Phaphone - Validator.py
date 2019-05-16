@@ -28,11 +28,15 @@ def reverse(num: str):
     print(list_num[::-1])
 
 
+def divisible_by_2(num: str):
+    the_num = int(num)
+    if the_num % 2 == 0:
+        return True
+    return False
+
+
 def multiply(num: str):
-    list_num = list(num)
-    rev = (list_num[::-1])
-    for i in list_num:
-        i * 2 if rev % 2 == 0
+    if divisible_by_2(the_num)
 
 
 def subtract(num: str):
