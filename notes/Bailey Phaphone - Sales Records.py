@@ -79,6 +79,7 @@ with open("Sales Records.csv", 'r') as old_csv:
     print("Baby Food: %s" % totalK)
     print()
     print("Cereal: %s" % totalL)
+    print("----------------------------")
     print("The highest profit is: %s" % max(totals_list))
 
 

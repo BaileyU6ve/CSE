@@ -8,6 +8,12 @@
 # The check digit (the last number of the card) is the amount that you would need to add to get a multiple of 10
 
 
+def validate(num: str):
+    if not all_16_digits(num):
+        new_list = drop_last_num(num)
+        reverse(new_list)
+
+
 def all_16_digits(num: str):
     if len(num) == 16:
         print("Everything has 16 digits")
@@ -35,22 +41,17 @@ def divisible_by_2(num: str):
     return False
 
 
-def multiply(num: str):
-    if divisible_by_2(the_num)
-
-
-def subtract(num: str):
-    list_num = list(num)
-    if i in list_num < 9:
-        subtract(9)
-        print(list_num)
-
-
-
-def validate(num: str):
-    if not all_16_digits(num):
-        new_list = drop_last_num(num)
-        reverse(new_list)
+# def multiply(num: str):
+#     the_num = int(num)
+#     if divisible_by_2(the_num):
+#
+#
+#
+# def subtract(num: str):
+#     list_num = list(num)
+#     if i in list_num < 9:
+#         subtract(9)
+#         print(list_num)
 
 
 print(validate("4556737586899855"))
