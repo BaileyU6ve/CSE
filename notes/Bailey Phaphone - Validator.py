@@ -12,6 +12,10 @@ def validate(num: str):
     if not all_16_digits(num):
         new_list = drop_last_num(num)
         reverse(new_list)
+        for i in new_list:
+            if not divisible_by_2():
+                new_list*2 if i%2 
+
 
 
 def all_16_digits(num: str):
