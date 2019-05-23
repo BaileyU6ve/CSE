@@ -24,12 +24,26 @@
     <SUITE FILE_PATH="coverage/CSE$CVSNotes.coverage" NAME="CVSNotes Coverage Results" MODIFIED="1556123847873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$hello_world.coverage" NAME="hello world Coverage Results" MODIFIED="1556813500775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/notes/Bailey Phaphone - Finished Game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6086">
+            <state relative-caret-position="1181">
               <caret line="363" selection-start-line="363" selection-end-line="363" />
               <folding>
                 <element signature="e#5983#6122#0" />
@@ -44,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/notes/CSVNotes.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -83,7 +97,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notes/Bailey Phaphone - Validator.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
@@ -185,7 +199,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Bailey Phaphone - Validator">
+  <component name="RunManager" selected="Python.Bailey Phaphone - Finished Game">
     <configuration name="Bailey Phaphone - Finished Game" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CSE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -305,9 +319,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Bailey Phaphone - Finished Game" />
         <item itemvalue="Python.Bailey Phaphone - Validator" />
         <item itemvalue="Python.Bailey Phaphone - Sales Records" />
-        <item itemvalue="Python.Bailey Phaphone - Finished Game" />
         <item itemvalue="Python.CSVNotes" />
         <item itemvalue="Python.hello world" />
       </list>
@@ -340,15 +354,15 @@
       <workItem from="1558022017073" duration="3228000" />
       <workItem from="1558112060745" duration="2723000" />
       <workItem from="1558450416777" duration="5782000" />
+      <workItem from="1558623550345" duration="2526000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59001000" />
+    <option name="totallyTimeSpent" value="61527000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.12100213" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -370,7 +384,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32995737" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12100213" />
@@ -403,9 +417,9 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CSE$Bailey_Phaphone___Finished_Game.coverage" NAME="Bailey Phaphone - Finished Game Coverage Results" MODIFIED="1557936157710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
+    <SUITE FILE_PATH="coverage/CSE$Bailey_Phaphone___Finished_Game.coverage" NAME="Bailey Phaphone - Finished Game Coverage Results" MODIFIED="1558629754776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$Bailey_Phaphone___Sales_Records.coverage" NAME="Bailey Phaphone - Sales Records Coverage Results" MODIFIED="1558112466017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
-    <SUITE FILE_PATH="coverage/CSE$Bailey_Phaphone___Validator.coverage" NAME="Bailey Phaphone - Validator Coverage Results" MODIFIED="1558455801783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
+    <SUITE FILE_PATH="coverage/CSE$Bailey_Phaphone___Validator.coverage" NAME="Bailey Phaphone - Validator Coverage Results" MODIFIED="1558629321103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Semester 2 Notes.py">
@@ -511,15 +525,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notes/Bailey Phaphone - Finished Game.py">
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-991083293/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6086">
-          <caret line="363" selection-start-line="363" selection-end-line="363" />
-          <folding>
-            <element signature="e#5983#6122#0" />
-            <element signature="e#6206#6456#0" />
-            <element signature="e#6533#6732#0" />
-          </folding>
+        <state relative-caret-position="333">
+          <caret line="4214" lean-forward="true" selection-start-line="4214" selection-end-line="4214" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes/CSVNotes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -553,24 +569,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notes/CSVNotes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-991083293/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="4214" lean-forward="true" selection-start-line="4214" selection-end-line="4214" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/notes/Bailey Phaphone - Validator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notes/Bailey Phaphone - Finished Game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1181">
+          <caret line="363" selection-start-line="363" selection-end-line="363" />
+          <folding>
+            <element signature="e#5983#6122#0" />
+            <element signature="e#6206#6456#0" />
+            <element signature="e#6533#6732#0" />
+          </folding>
         </state>
       </provider>
     </entry>
